@@ -1,0 +1,193 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100px;
+    font-family: 'Source Serif 4', serif;
+}
+
+.up{
+    background-color: #feece0;
+    width: 100%;
+    height: 50%;
+    color: #58190A;
+    display: flex;
+    justify-content: center;
+}
+
+.up img{
+    width: 46.33%;
+    height: 80%;
+    margin-top: 3%;
+}
+
+.down{
+    background-color: #9b6647;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pai{
+    display: flex;
+}
+
+.pedido{
+    padding-left: 6%;
+    width: 42.2%;
+    height: 11.6%;
+}
+
+.pedido p{
+    font-size: 38%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1{
+    font-size: 72%;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+#counter{
+    display: flex;
+    width: 46.4%;
+    height: 19.16%;
+    color: #9b6647;
+    justify-content: space-between;
+}
+
+#counter p{
+    font-size: 35%;
+    margin: 0;
+}
+
+#counter p:nth-of-type(1){
+    width: 43.617%;
+    height: 71.875%;
+}
+
+#symbols{
+    display: flex;
+    justify-content: space-between;
+    width: 51.06%;
+    transform: translateX(30%);
+}
+
+#symbols p{
+    transform: translateX(15%);
+}
+
+#symbols img{
+    width: 0.3em;
+    height: 0.3em;
+    transform: translateY(20%);
+}
+
+h2{
+    font-size: 38%;
+    font-weight: bold;
+    margin: 0;
+    width: 120%;
+}
+
+li{
+    font-size: 28%;
+    color: #FFFFFF;
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-wrap: nowrap;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    text-wrap: nowrap;
+}
+
+.left{
+    width: 30.07%;
+    height: 51.11%;
+    margin-right: 3.47%;
+}
+
+.right{
+    width: 46.04%;
+    height: 57.1%;
+    transform: translateY(5%);
+}
+
+.down img{
+    padding-right: 2.87%;
+    transform: translateY(25%);
+}
+
+#ingredients{
+    width: 62.51%;
+    height: 13.91%;
+    display: flex;
+    color: #FEECE0;
+    margin-bottom: 4.4%;
+}
+
+#prepare{
+    width: 52.48%;
+    height: 12.45%;
+    display: flex;
+    color: #FEECE0;
+    margin-bottom: 4.4%;
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 1400px){
+    html, body{
+        font-size: 75px;
+    }
+    .up img{
+        height:60%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    html, body{
+        font-size: 55px;
+    }
+
+    .pedido{
+        transform: translateY(300%);
+    }
+}
+
+@media screen and (max-width: 560px){
+    html, body{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .left{
+        transform: translate(70%,-40%);
+    }
+
+    .right{
+        transform: translate(-35%, 35%);
+
+    }
+
+    .up img{
+        transform: translateY(20%);
+        height: 50%;
+    }
+
+    .pedido{
+        transform: translateY(450%);
+    }
+}
+
+

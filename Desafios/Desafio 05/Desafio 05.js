@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cvvInput = document.getElementById('cvv');
     const form = document.getElementById('form')
     const name = document.getElementById('name')
-
+//Função de submit do formulário, que adequa as entradas a determinados formatos de exibição e valida os campos
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             cardInput.style.border = '1px solid #9CA3AF';
         }
     });
-
+//Mais adequação dos inputs
     cardInput.addEventListener('input', function () {
         let valorInput = cardInput.value.replace(/\D/g, '');
         if (valorInput.length > 16) {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         valorInput = valorInput.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/, '$1 $2 $3 $4'); 
         cardInput.value = valorInput;
     });
-
+//Formatação para entrada de data
     dateInput.addEventListener('input', function () {
         let valorData = dateInput.value.replace(/\D/g, '');
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         dateInput.value = valorData;
     });
-
+//Formatação para um máximo de 3 caracteres (numéricos)
     cvvInput.addEventListener('input', function () {
         let valorCvv = cvvInput.value.replace(/\D/g, '');
         if (valorCvv.length > 3) {

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let add = document.querySelector('#plus')
     many.value = 1
     many.innerText = '0' + many.value
-
+//Função para incrementar/decrementar a quantidade de pamonhas
     sub.addEventListener('click', function () {
         if (many.value > 1) {
             many.value = many.value - 1

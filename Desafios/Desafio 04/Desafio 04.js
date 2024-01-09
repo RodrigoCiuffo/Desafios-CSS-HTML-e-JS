@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let eye = document.querySelector('#olho');
     let senha = document.querySelector('#senha');
     let signIn = document.querySelector('#login')
+//Função para inverter o estado da imagem de hide/show do campo de senha
     eye.addEventListener('click', function () {
         senha.type = (senha.type === 'password') ? 'text' : 'password';
         eye.src = (senha.type === 'password') ? 'eye-off.png' : 'eye.png';
     })
+//Evento de clique do botão, que contempla submit, checagens, mensagens de sucesso e de erro 
     button.addEventListener('click', function () {
         if (div.querySelector('#erro')) {
             div.querySelector('#erro').remove()

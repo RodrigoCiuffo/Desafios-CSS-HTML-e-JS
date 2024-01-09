@@ -55,7 +55,7 @@ html, body {
     border-radius: 10px;
 } 
 
-/* Acima, container principal e suas colunas. Abaixo, os elementos de cada coluna e linha. */
+/* Acima, container principal e suas colunas. Abaixo, os elementos contidos em cada coluna e linha. */
 
 .large img{
     transform: translate(38px, 40px);

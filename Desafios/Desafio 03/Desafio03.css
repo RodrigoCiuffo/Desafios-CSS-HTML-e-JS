@@ -74,7 +74,8 @@ h1{
 #symbols{
     display: flex;
     justify-content: space-between;
-    width: 51.06%;
+    width: 144px;
+    height: 32px;
     transform: translateX(30%);
 }
 
@@ -146,6 +147,16 @@ ul, ol{
     text-wrap: nowrap;
 }
 
+#minus:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#plus:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1400px){
     html, body{
         font-size: 75px;
@@ -187,7 +198,5 @@ ul, ol{
 
     .pedido{
         transform: translateY(450%);
-    }
+    }  
 }
-
-

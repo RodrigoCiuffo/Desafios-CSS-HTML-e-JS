@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Desafio 05.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Desafio 05</title>
+</head>
+
+<body>
+    <section>
+        <form action="/desafio" id="form">
+            <div id="mainDiv">
+                <div id="info">
+                    <label for="num">Número do cartão</label>
+                    <input type="text" id="num">
+                    <label for="name">Nome do titular</label>
+                    <input type="text" id="name" placeholder="Nome como está no cartão">
+                    <div id="val">
+                        <div id="data">
+                            <label for="date">Validade</label>
+                            <input type="text" id="date" placeholder="mm/aa">
+                        </div>
+                        <div id="verifica">
+                            <label for="cvv">CVV<img src="question.png" id="interrogacao" alt="Info"></label>
+                            <input type="text" id="cvv" placeholder="***">
+                        </div>
+                    </div>
+                </div>
+                <div id="card">
+                    <img src="visa.png" id="cartao" alt="Credit Card Ilustration">
+                    <div id="security">
+                        <img src="Shield.png" id="check" alt="Security Icon">
+                        <p>Seus dados estão seguros</p>
+                    </div>
+                </div>
+            </div>
+            <button>Adicionar cartão</button>
+        </form>
+    </section>
+    <script src="Desafio 05.js"></script>
+</body>
+
+</html>

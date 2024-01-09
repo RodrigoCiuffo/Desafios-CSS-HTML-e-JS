@@ -46,7 +46,8 @@ button{
 
 button:hover{
     background-color: #212187;
-    transition: all 0.5s
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .animation {
@@ -70,7 +71,6 @@ button:hover{
     height: 300px;
     padding: 20px;
     margin: 20px;
-    display: flexbox;
     transform: translate(30%, 50%);
 }
 
@@ -83,11 +83,11 @@ button:hover{
 
 @media (max-width: 1440px){
     .pai{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .animation{
-    transform: translate(290px, 0%);
+    transform: translate(280px, 120px);
     height: 280px;
     max-width: 100%;
     }
@@ -95,6 +95,7 @@ button:hover{
     .animation img{
         height: 200px;
         align-content: center;
+        margin-top: -50px;
     }
 
     .box{

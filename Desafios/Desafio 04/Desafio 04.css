@@ -1,0 +1,237 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #F8FAFC;
+    background-image: url(img.png);
+    background-size: 50vw 100vh;
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-size: 1.25vw;
+}
+
+#logo {
+    transform: translate(7.77vw, 4.44vh);
+    width: 9.5vw;
+    height: 7vh;
+}
+
+#main {
+    width: 26.66vw;
+    height: 53.66vh;
+    transform: translate(7.77vw, 12.66vh);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1 {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #1E293B;
+    font-size: 2.81vw;
+}
+
+#p1 {
+    margin: 0;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+}
+
+#pw {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.77vh;
+}
+
+#credentials {
+    margin-top: 4.44vh;
+}
+
+::placeholder {
+    color: #94A3B8;
+    font-size: 0.975vw;
+    text-indent: 2.5%;
+}
+
+label {
+    color: #1E293B;
+    font-weight: 600;
+    font-size: 0.975vw;
+}
+
+#labelPass {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 26.45vw;
+    height: 6.88vh;
+    padding: 0;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    text-indent: 2.5%;
+    transition: 0.3s;
+}
+
+input:hover {
+    border-color: #7C3AED;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #7C3AED !important;
+    transition: 0.3s;
+}
+
+#icon{
+    width: 13.45vw;
+    display: flex;
+    justify-content: end;
+    transform: translate(90%,-150%);
+}
+
+#olho{
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
+
+#olho:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: 0.3s;
+}
+
+#forgot {
+    color: #7C3AED;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button {
+    margin: 3.5vh 0;
+    background-color: #7C3AED;
+    width: 26.45vw;
+    height: 7.88vh;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px transparent;
+    border-radius: 2.5px;
+    font-size: 0.975vw;
+    transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+    background-color: #9F67FF;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#subscribe {
+    color: #7C3AED;
+    font-weight: bold;
+}
+
+#subscribe:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#p2 {
+    margin: 0;
+    color: #475569;
+}
+
+@media screen and (max-width: 912px) {
+
+    body,
+    html {
+        background-image: none;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input {
+        width: 46.45vw;
+        height: 3.23vh;
+    }
+
+    #forgot {
+        font-size: 1.975vw;
+    }
+
+    #labelPass {
+        font-size: 1.975vw;
+        width: 46.66vw;
+    }
+
+    #log {
+        font-size: 1.975vw;
+    }
+
+    #second {
+        width: 46.66vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    #p1 {
+        font-size: 2.5vw;
+    }
+
+    button {
+        width: 46.45vw;
+        height: 3.88vh;
+        margin: 10% 0;
+        font-size: 1.975vw;
+    }
+
+    ::placeholder {
+        font-size: 1.975vw;
+        text-indent: 2.5%;
+    }
+
+    #main {
+        margin: 0;
+        padding: 0;
+        width: 26.66vw;
+        height: 23.66vh;
+        transform: translate(-30%, -100%);
+    }
+
+    #logo {
+        width: 14.5vw;
+        height: 4vh;
+        transform: translate(-100%, -600%);
+    }
+
+    #p2 {
+        width: 46.66vw;
+        font-size: 1.975vw;
+    }
+
+    #olho{
+        width: 15px;
+        height: 15px;
+    }
+
+    #icon{
+        transform: translate(230%,-150%);
+    }
+}
